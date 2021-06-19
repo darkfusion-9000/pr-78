@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>family tree </title>
+</head>
+<body>
+<center>
+<h1>family tree</h1>
+<img id="trey" style=height:500px; width="500px" src="5.jpeg"> 
+<div>
+<button type="button" onclick="nextslide()">next </button>
+</div>
+<p id="reasontext">hafsa<p>
+</center>
+<script>
+var reasons= [
+"abdullah",
+"hafsa"
+];
+var images=["1.jpeg","5.jpeg"];
+var i=0;
+function nextslide(){
+document.getElementById("reasontext"). innerHTML=reasons[i];
+document.getElementById("trey").src=images[i];
+i++;
+}
+</script>
+<style>body{
+    text-align:center;
+    background-color:rgb(251, 255, 0);
+    }
+    #kee{
+    font-family:papyrus;
+    font-size:50px;
+    font-variant:small-caps;
+    color:#1q1111;
+    }
+    #trey{
+    border-style:solid;
+    border-color:blue;
+    border-radius:100px;
+    width:450px;
+    padding:7px;
+    
+    
+    }</style>
+</body>
+</html>
